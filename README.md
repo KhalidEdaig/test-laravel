@@ -22,7 +22,7 @@ DB_USERNAME=root
 DB_PASSWORD=password
 6.creation data base dans MySQL:
 name : testbackend
-$ php artisan serve
 $ php artisan migrate
+$ php artisan serve
 $ composer dump-autoload
 $ php artisan db:seed
