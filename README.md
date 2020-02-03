@@ -24,4 +24,5 @@ DB_PASSWORD=password
 name : testbackend
 $ php artisan serve
 $ php artisan migrate
+$ composer dump-autoload
 $ php artisan db:seed
