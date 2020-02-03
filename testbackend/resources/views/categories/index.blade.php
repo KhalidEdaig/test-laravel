@@ -2,6 +2,13 @@
 
 @section('content')
 <div class="container">
+    <div class="d-flex">
+        <div class="ml-auto p-2">
+            <a  href="{{route('category.create')}}" class="btn btn-dark" title="Ajouter">
+                <i class="fa fa-plus fa-2x"></i>
+            </a>
+    </div>
+</div>
     <div class="row justify-content-center">
         <div class="col">
             <div class="card">
@@ -27,14 +34,14 @@
                             <td>{{$category->name}}</td>
                             <td>
 
-                                <a  href="{{route('category.edit',['id'=>$category->id])}}">
-                                    <i class="fa fa-pencil-square"></i>
+                                <a  href="{{route('category.edit',['id'=>$category->id])}}" class="btn btn-success"  >
+                                    <i class="fa fa-pencil-square fa-2x" ></i>
                                 </a>
 
                             </td>
                             <td>
-                                <a  href="{{route('category.delete',['id'=>$category->id])}}">
-                                    <i class="fa fa-trash-o"></i>
+                                <a  href="{{route('category.delete',['id'=>$category->id])}}" class=" btn btn-danger " >
+                                    <i class="fa fa-trash-o fa-2x" ></i>
                                 </a>
                             </td>
                         </tr>

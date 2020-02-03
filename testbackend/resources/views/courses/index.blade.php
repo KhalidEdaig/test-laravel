@@ -2,6 +2,13 @@
 
 @section('content')
 <div class="container">
+    <div class="d-flex">
+        <div class="ml-auto p-2">
+            <a  href="{{route('course.create')}}" class="btn btn-dark" title="Ajouter">
+                <i class="fa fa-plus fa-2x"></i>
+            </a>
+    </div>
+</div>
     <div class="row justify-content-center">
         <div class="col">
             <div class="card">
@@ -30,13 +37,13 @@
                             @endif
                             @endforeach
                             <td>
-                                <a  href="{{route('course.edit',['id'=>$course->id])}}">
-                                    <i class="fa fa-pencil-square"></i>
+                                <a  href="{{route('course.edit',['id'=>$course->id])}}" class="btn btn-success">
+                                    <i class="fa fa-pencil-square fa-2x"></i>
                                 </a>
                             </td>
                             <td>
-                                <a  href="{{route('course.delete',['id'=>$course->id])}}">
-                                    <i class="fa fa-trash-o"></i>
+                                <a  href="{{route('course.delete',['id'=>$course->id])}} " class="btn btn-danger">
+                                    <i class="fa fa-trash-o fa-2x"></i>
                                 </a>
                             </td>
                         </tr>

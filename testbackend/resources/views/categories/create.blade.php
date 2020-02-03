@@ -19,7 +19,7 @@
                     </div>
 
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-success">Add</button>
                   </form>
                   <!--************** end form create ******************** -->
 
